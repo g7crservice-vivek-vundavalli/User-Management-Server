@@ -1,0 +1,31 @@
+GET http://localhost:4000/api/userdetails
+
+###
+POST http://localhost:4000/api/userdetails
+Content-Type: application/json
+
+{
+    "userName":"kiran",
+    "EmailId":"kiran@gmail.com",
+    "Gender" : "male",
+    "State" : "Karanataka",
+    "city":"Mangolre",
+    "PhoneNumber": 9182500533,
+    "IsActive":0
+}
+
+###
+PUT http://localhost:4000/api/userdetails/update/1
+Content-Type: application/json
+
+{
+    
+    "EmailId":"vivekvundavalli@gmail.com",
+    "Gender" : "male",
+    "State" : "Karanataka",
+    "city":"Mangolre",
+    "PhoneNumber": 9182500533,
+    "IsActive":0
+}
+###
+DELETE http://localhost:4000/api/userdetails/5
